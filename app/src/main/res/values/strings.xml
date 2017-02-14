@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Dogscreen</string>
+
+    <string name="main_welcome_title">Dogscreen demo</string>
+    <string name="main_welcome_text">Welcome to the Dogscreen demo app! This is based on leaked dogfood releases from Google. Enjoy!</string>
+    <string name="main_welcome_action">TRY IT OUT</string>
+
+    <string name="main_info_title">App info</string>
+    <string name="main_info_text_build">Build number:</string>
+    <string name="main_info_text_version">Build version:</string>
+    <string name="main_info_text_flavor">Build flavor:</string>
+    <string name="main_info_text_debug">Debug release:</string>
+
+    <string name="dogscreen_desc_original">This app can only be shared with Googlers and approved testers. It is not possible to register, invite, or make calls to others.</string>
+
+    <string name="dogscreen_warning">Shh&#8230; confidential</string>
+    <string name="dogscreen_desc">This app can only be shared with approved testers and developers.  It is not possible to register, invite, or make calls to others.</string>
+    <string name="dogscreen_confirm">GOT IT</string>
+
+</resources>

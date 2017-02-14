@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dogscreen_confirm_color">#ff0097a7</color>
+    <color name="dogscreen_background">#ff263238</color>
+    <color name="registration_element_fg">#ff64ffda</color>
+
+</resources>

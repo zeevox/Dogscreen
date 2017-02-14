@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dogscreen_root"
+    android:background="@color/dogscreen_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="252.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200.0dip"
+            android:layout_height="200.0dip"
+            android:src="@drawable/playful_dog"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:textSize="24.0sp"
+            android:textColor="@color/registration_element_fg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="16.0dip"
+            android:text="@string/dogscreen_warning" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="56.0dip"
+            android:text="@string/dogscreen_desc" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#fffafafa"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dip"
+        android:layout_alignParentBottom="true">
+
+        <!-- you can also use android:background="@android:color/transparent" for the button -->
+
+        <Button
+            android:clickable="true"
+            android:textSize="16.0sp"
+            android:textColor="@color/dogscreen_confirm_color"
+            android:id="@+id/dogscreen_confirm_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/dogscreen_confirm"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginEnd="10.0dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
