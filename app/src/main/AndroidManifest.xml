@@ -21,6 +21,12 @@
                 <category android:name="android.intent.category.INFO" />
             </intent-filter>
         </activity>
+        <activity android:name=".DogscreenFabActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_APP_INFO" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
