@@ -1,140 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_vertical_padding"
-    android:paddingStart="@dimen/activity_horizontal_padding"
-    android:paddingEnd="@dimen/activity_horizontal_padding"
     tools:context="com.zeevox.dogscreen.demo.MainActivity">
-
-    <android.support.v7.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/card_view_welcome"
-        app:cardBackgroundColor="@color/cardview_light_background"
-        app:cardCornerRadius="@dimen/cardview_default_radius"
-        app:cardElevation="@dimen/cardview_default_elevation">
-
-        <RelativeLayout
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/activity_vertical_padding"
-            android:paddingEnd="@dimen/activity_horizontal_padding"
-            android:paddingStart="@dimen/activity_horizontal_padding"
-            android:paddingTop="@dimen/activity_vertical_padding">
-
-
-            <TextView
-                android:id="@+id/welcome_title"
+            android:layout_margin="@dimen/activity_padding"
+            android:id="@+id/card_view_welcome">
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/main_welcome_title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:layout_margin="@dimen/activity_padding"><!--
+                <TextView
+                    android:id="@+id/welcome_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_welcome_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+                <ImageView
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:id="@+id/dogscreen_icon"
+                    android:src="@drawable/dogscreen_icon"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_below="@id/dogscreen_icon"
+                    android:layout_marginTop="@dimen/activity_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_welcome_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <Button
+                    android:id="@+id/welcome_action_default"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_padding"
+                    android:text="@string/main_welcome_action_default"
+                    android:layout_below="@+id/welcome_text"
+                    android:layout_marginBottom="0dp" />
 
-            <TextView
-                android:id="@+id/welcome_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/welcome_title"
-                android:paddingTop="8dp"
-                android:text="@string/main_welcome_text"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:layout_below="@id/welcome_text"
-                android:id="@+id/card_space_1"/>
-
-
-            <Button
-                android:id="@+id/welcome_action_fab"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/card_space_1"
-                android:layout_toEndOf="@+id/welcome_action_default"
-                android:layout_toRightOf="@+id/welcome_action_default"
-                android:text="@string/main_welcome_action_fab" />
-
-            <Button
-                android:id="@+id/welcome_action_default"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/card_space_1"
-                android:text="@string/main_welcome_action_default" />
-
-        </RelativeLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v4.widget.Space
-        android:id="@+id/main_space"
-        android:layout_below="@id/card_view_welcome"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/activity_vertical_padding" />
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/card_view_info"
-        android:layout_below="@id/main_space"
-        android:paddingTop="@dimen/activity_vertical_padding"
-        app:cardBackgroundColor="@color/cardview_light_background"
-        app:cardCornerRadius="@dimen/cardview_default_radius"
-        app:cardElevation="@dimen/cardview_default_elevation">
-
-        <LinearLayout
+                <Button
+                    android:id="@+id/welcome_action_fab"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_welcome_action_fab"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/welcome_action_default"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/activity_horizontal_padding"
-            android:paddingEnd="@dimen/activity_horizontal_padding"
-            android:paddingTop="@dimen/activity_vertical_padding"
-            android:paddingBottom="@dimen/activity_vertical_padding"
-            android:orientation="vertical">
-
-            <TextView
-                android:paddingTop="8dp"
+            android:id="@+id/card_view_info"
+            android:layout_below="@id/card_view_welcome"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_padding">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/main_info_title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <TextView
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/info_build"
-                android:text="@string/main_info_text_build"/>
-
-            <TextView
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/info_version"
-                android:text="@string/main_info_text_version"/>
-
-            <TextView
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/info_flavor"
-                android:text="@string/main_info_text_flavor"/>
-
-            <TextView
-                android:paddingTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/info_debug"
-                android:text="@string/main_info_text_debug"/>
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-</RelativeLayout>
+                android:layout_margin="@dimen/activity_padding"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_info_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                <TextView
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_build"
+                    android:text="@string/main_info_text_build"/>
+                <TextView
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_version"
+                    android:text="@string/main_info_text_version"/>
+                <TextView
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_flavor"
+                    android:text="@string/main_info_text_flavor"/>
+                <TextView
+                    android:paddingTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_debug"
+                    android:text="@string/main_info_text_debug"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
