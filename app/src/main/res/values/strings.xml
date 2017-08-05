@@ -2,7 +2,7 @@
     <string name="app_name">Dogscreen</string>
 
     <string name="main_welcome_title">Dogscreen demo</string>
-    <string name="main_welcome_text">Welcome to the Dogscreen demo app! This is based on leaked dogfood releases from Google. Enjoy!</string>
+    <string name="main_welcome_text">Welcome to the Dogscreen demo app! This is based on leaked dogfood releases from Google.</string>
     <string name="main_welcome_action_default">DEFAULT</string>
     <string name="main_welcome_action_fab">FAB</string>
 
