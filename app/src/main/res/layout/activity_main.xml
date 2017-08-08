@@ -27,7 +27,8 @@
                     android:layout_height="128dp"
                     android:id="@+id/dogscreen_icon"
                     android:src="@drawable/dogscreen_icon"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/dogscreen_application_icon"/>
                 <TextView
                     android:id="@+id/welcome_text"
                     android:layout_below="@id/dogscreen_icon"

@@ -11,7 +11,7 @@ public class DogscreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dogscreen);
-        Button confirmButton = (Button) findViewById(R.id.dogscreen_confirm_button);
+        Button confirmButton = findViewById(R.id.dogscreen_confirm_button);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

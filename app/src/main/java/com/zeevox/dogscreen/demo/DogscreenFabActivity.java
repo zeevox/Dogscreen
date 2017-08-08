@@ -11,7 +11,7 @@ public class DogscreenFabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dogscreen_fab);
-        FloatingActionButton confirmButton = (FloatingActionButton) findViewById(R.id.dogsceen_confirm_fab);
+        FloatingActionButton confirmButton = findViewById(R.id.dogscreen_confirm_fab);
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
