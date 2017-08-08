@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Dogscreen demo</string>
+    <string name="app_name">Dogscreen</string>
+    <string name="main_activity_title">Dogscreen demo</string>
 
     <string name="main_welcome_title">Dogscreen demo</string>
     <string name="main_welcome_text">Welcome to the Dogscreen demo app! This is based on leaked dogfood releases of applications from Google.</string>
