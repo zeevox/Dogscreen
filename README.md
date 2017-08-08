@@ -1,6 +1,6 @@
 # Dogscreen
 Dogscreen is an example on how to implement Google-style dogfood notices.
-<br><a href='https://play.google.com/store/apps/details?id=com.zeevox.dogscreen.demo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="300" height="120"/></a>
+<br><a href='https://play.google.com/store/apps/details?id=com.zeevox.dogscreen.demo&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="width: 240px; height: auto;"/></a>
 <br>Google Play and the Google Play logo are trademarks of Google Inc.
 <br>
 #### A more detailed README.md will be available some time in the future.
