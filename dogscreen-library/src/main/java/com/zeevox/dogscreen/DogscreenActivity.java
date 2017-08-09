@@ -1,9 +1,13 @@
 package com.zeevox.dogscreen;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,10 +17,17 @@ public class DogscreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Get the user settings
-        CharSequence title = getIntent().getCharSequenceExtra("title");
-        CharSequence content = getIntent().getCharSequenceExtra("content");
-        // If no parameter was passed, set the default dogscreen value
+        // If the user passed a parameter through Dogscreen.setFullscreen(), display accordingly.
+        // Default to false if no value is passed
+        // This must be called before setContentView()
+        if (getIntent().getBooleanExtra("fullscreen", false)) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                setFullscreen();
+            } else {
+                Log.e("Dogscreen", "Cannot setFullscreen() on application with minSdk below 16.");
+            }
+        }
+        // If no parameter was passed, set the default dogscreen value type
         int type = getIntent().getIntExtra("type", Dogscreen.DOGSCREEN_DEFAULT);
         switch (type) {
             // If the user passed a parameter through Dogscreen.setType(), display the appropriate dogscreen.
@@ -33,6 +44,9 @@ public class DogscreenActivity extends AppCompatActivity {
         }
         // Once the view is set, set an onClickListener for the confirmation button.
         setConfirmationListener(type);
+        // Get the user settings
+        CharSequence title = getIntent().getCharSequenceExtra("title");
+        CharSequence content = getIntent().getCharSequenceExtra("content");
         // If the user passed a parameter through Dogscreen.setTitle(), display the custom title.
         TextView titleText = findViewById(R.id.dogscreen_title);
         if (title != null && !title.toString().isEmpty()) {
@@ -77,5 +91,18 @@ public class DogscreenActivity extends AppCompatActivity {
                 });
                 break;
         }
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void setFullscreen() {
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        View mDecorView = getWindow().getDecorView();
+        mDecorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN );
     }
 }
