@@ -1,5 +1,5 @@
 # Dogscreen
-[![Download](https://api.bintray.com/packages/zeevox/Dogscreen/dogscreen-library/images/download.svg) ](https://bintray.com/zeevox/Dogscreen/dogscreen-library/_latestVersion)
+[![Download](https://img.shields.io/badge/Download-v2.0.0-brightgreen.svg) ](https://bintray.com/zeevox/Dogscreen/dogscreen-library/_latestVersion)
 [![Github license](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/ZeevoX/Dogscreen/blob/master/LICENSE)
 
 # Table of Contents
@@ -7,11 +7,12 @@
 1. [Sample Project](#sample-project)
 2. [Gradle Dependency](#gradle-dependency)
 3. [What's New](#whats-new)
-4. [Basic Dogscreen](#basic-dogscreen)
-5. [Custom Dogscreen](#custom-dogscreen)
+4. [Information](#information)
+5. [Basic Dogscreen](#basic-dogscreen)
+6. [Custom Dogscreen](#custom-dogscreen)
 	1. [Setting a Title](#setting-a-title)
 	2. [Customizing content](#customizing-content)
-6. [Confirmation button](#confirmation-button)
+7. [Confirmation button](#confirmation-button)
 	1. [Default confirmation bar](#default-confirmation-bar)
 	2. [FAB confirmation](#fab-confirmation)
 
@@ -20,7 +21,7 @@
 
 # Sample Project
 
-You can download the latest sample APK from [the releases page.](https://github.com/ZeevoX/Dogscreen/releases)
+You can download the latest sample APK from [the releases page.](https://github.com/ZeevoX/Dogscreen/releases/latest)
 
 It's also on Google Play:
 
@@ -29,8 +30,7 @@ It's also on Google Play:
        src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="65"/>
 </a>
 
-Having the sample project installed is a good way to be notified of new releases. Although Watching this 
-repository will allow GitHub to email you whenever I publish a release.
+Having the sample project installed is a good way to be notified of new releases.
 
 ---
 
@@ -62,10 +62,14 @@ See the project's Releases page for a list of versions with their changelogs.
 
 ---
 
-# Basic Dogscreen
+# Information
 
-First of all, note that `DogscreenActivity` extends `AppCompatActivity`, so Android Studio will show an error that multiple revisions of the Support Libraries are being used at one time.
+First of all, note that `DogscreenActivity` extends `AppCompatActivity`, so Android Studio will show an error that multiple revisions of the Support Libraries are being used at one time if you have any other than 26.0.1 in use.
 Currently, Dogscreen uses the Android Support Libraries v26.0.1, released August 2017. I will try to update Dogscreen with the latest Support Libraries as soon as possible after new revisions are released.
+
+---
+
+# Basic Dogscreen
 
 Note that you can always substitute literal strings and string resources for methods that take strings.
 
@@ -108,8 +112,6 @@ You can also pass a String ID, as above.
 
 ---
 
-	1. [Default confirmation bar](#default-confirmation-bar)
-	2. [FAB confirmation](#fab-confirmation)
 
 # Confirmation button
 
