@@ -15,13 +15,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_padding"><!--
-                <TextView
-                    android:id="@+id/welcome_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/main_welcome_title"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+                android:layout_margin="@dimen/activity_padding">
                 <ImageView
                     android:layout_width="128dp"
                     android:layout_height="128dp"
@@ -60,50 +54,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/card_view_info"
-            android:layout_below="@id/card_view_welcome"
-            android:visibility="gone"
-            android:layout_marginTop="@dimen/activity_vertical_padding">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_padding"
-                android:orientation="vertical">
-                <TextView
-                    android:paddingTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/main_info_title"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-                <TextView
-                    android:paddingTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/info_build"
-                    android:text="@string/main_info_text_build"/>
-                <TextView
-                    android:paddingTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/info_version"
-                    android:text="@string/main_info_text_version"/>
-                <TextView
-                    android:paddingTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/info_flavor"
-                    android:text="@string/main_info_text_flavor"/>
-                <TextView
-                    android:paddingTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/info_debug"
-                    android:text="@string/main_info_text_debug"/>
-            </LinearLayout>
         </android.support.v7.widget.CardView>
     </RelativeLayout>
 </ScrollView>

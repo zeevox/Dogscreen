@@ -5,12 +5,6 @@
     <string name="main_welcome_action_default">DEFAULT</string>
     <string name="main_welcome_action_fab">FAB</string>
 
-    <string name="main_info_title">App info</string>
-    <string name="main_info_text_build">Build number:</string>
-    <string name="main_info_text_version">Build version:</string>
-    <string name="main_info_text_flavor">Build type:</string>
-    <string name="main_info_text_debug">Debug release:</string>
-
     <!-- Original string from the leaked Google Duo APK -->
     <!-- This app can only be shared with Googlers and approved testers. It is not possible to register, invite, or make calls to others. -->
     <string name="dogscreen_warning">Shh&#8230; confidential</string>
