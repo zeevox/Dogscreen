@@ -65,6 +65,7 @@ See the project's Releases page for a list of versions with their changelogs.
 # Information
 
 First of all, note that `DogscreenActivity` extends `AppCompatActivity`, so Android Studio will show an error that multiple revisions of the Support Libraries are being used at one time if you have any other than 26.0.1 in use.
+
 Currently, Dogscreen uses the Android Support Libraries v26.0.1, released August 2017. I will try to update Dogscreen with the latest Support Libraries as soon as possible after new revisions are released.
 
 ---
@@ -129,12 +130,24 @@ The default may be changed in the future.
 
 ### FAB Confirmation
 
-You can replace the bottom action bar with a FAB.
-To achieve this, use
+You can replace the bottom action bar with a FAB. To achieve this, use
 
 ```java
 dogscreen.setType(Dogscreen.DOGSCREEN_FAB);
 ```
+
+---
+
+# Fullscreen
+
+You can set the dogscreen to be display full screen, too.
+
+```java
+dogscreen.setFullscreen(true);
+```
+
+Note that this requires API Level 19 (Android KitKat) or above.
+Although I could technically support API Level 16, that results in a serious bug on API Levels 21 and above.
 
 ---
 
