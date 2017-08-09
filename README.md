@@ -1,5 +1,5 @@
 # Dogscreen
-[![Download](https://img.shields.io/badge/Download-v2.0.0-brightgreen.svg) ](https://bintray.com/zeevox/Dogscreen/dogscreen-library/_latestVersion)
+[![Download](https://img.shields.io/badge/Download-v2.1.0-brightgreen.svg) ](https://bintray.com/zeevox/Dogscreen/dogscreen-library/_latestVersion)
 [![Github license](https://img.shields.io/badge/license-MIT%20License-blue.svg)](https://github.com/ZeevoX/Dogscreen/blob/master/LICENSE)
 
 # Table of Contents
