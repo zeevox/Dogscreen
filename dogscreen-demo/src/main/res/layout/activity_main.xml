@@ -32,23 +32,36 @@
                     android:text="@string/main_welcome_text"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                 <Button
-                    android:id="@+id/welcome_action_default"
+                    android:id="@+id/example_default_button"
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_padding"
-                    android:text="@string/main_welcome_action_default"
+                    android:text="@string/example_default_text"
                     android:layout_below="@+id/welcome_text"
                     android:layout_marginBottom="0dp" />
 
                 <Button
-                    android:id="@+id/welcome_action_fab"
+                    android:id="@+id/example_fab_button"
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_welcome_action_fab"
+                    android:text="@string/example_fab_text"
                     android:layout_marginTop="0dp"
-                    android:layout_below="@+id/welcome_action_default"
+                    android:layout_below="@+id/example_default_button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/example_fullscreen_button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example_fullscreen_text"
+                    android:layout_marginTop="0dp"
+                    android:layout_below="@+id/example_fab_button"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"
