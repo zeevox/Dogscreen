@@ -13,7 +13,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            shrinkResources true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -24,5 +24,4 @@ dependencies {
     compile project(':dogscreen-library')
     compile 'com.android.support:appcompat-v7:26.0.1'
     compile 'com.android.support:cardview-v7:26.0.1'
-    //compile 'com.android.support:design:26.0.1'
 }
