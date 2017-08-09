@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Set the toolbar title to "Dogscreen demo"
         try {
+            //noinspection ConstantConditions
             getSupportActionBar().setTitle(R.string.main_activity_title);
         } catch (NullPointerException npe) {
             Toast.makeText(this, "An error occurred. Please report this to the developer: Error code MA19", Toast.LENGTH_LONG).show();
@@ -31,11 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //startActivity(new Intent(MainActivity.this, DogscreenActivity.class));
-                Dogscreen dogscreen = new Dogscreen(getApplicationContext());
-                dogscreen.setTitle(R.string.dogscreen_warning);
-                dogscreen.setContent(R.string.dogscreen_desc);
-                dogscreen.setType(Dogscreen.DOGSCREEN_DEFAULT);
-                dogscreen.show();
+                new Dogscreen(getApplicationContext()).show();
             }
         });
 
@@ -47,11 +44,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(MainActivity.this, DogscreenFabActivity.class));
-                Dogscreen dogscreen = new Dogscreen(getApplicationContext());
-                dogscreen.setTitle(R.string.dogscreen_warning);
-                dogscreen.setContent(R.string.dogscreen_desc);
-                dogscreen.setType(Dogscreen.DOGSCREEN_FAB);
-                dogscreen.show();
+                new Dogscreen(getApplicationContext())
+                        .setType(Dogscreen.DOGSCREEN_FAB)
+                        .show();
             }
         });
 
@@ -70,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     Dogscreen dogscreen = new Dogscreen(getApplicationContext());
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                        dogscreen.setFullscreen(true);
+                        dogscreen.setFullscreen(true).show();
                     }
-                    dogscreen.show();
                 }
             });
         }

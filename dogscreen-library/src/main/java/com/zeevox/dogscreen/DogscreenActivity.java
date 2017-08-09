@@ -69,7 +69,7 @@ public class DogscreenActivity extends AppCompatActivity {
         }
     }
 
-    public void setConfirmationListener(int layoutType) {
+    private void setConfirmationListener(int layoutType) {
         // Close the activity when accepted
         switch (layoutType) {
             case Dogscreen.DOGSCREEN_FAB:
@@ -95,7 +95,7 @@ public class DogscreenActivity extends AppCompatActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public void setFullscreen() {
+    private void setFullscreen() {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View mDecorView = getWindow().getDecorView();
         mDecorView.setSystemUiVisibility(

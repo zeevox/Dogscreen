@@ -53,5 +53,6 @@
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@drawable/check"
-        app:backgroundTint="@color/registration_element_fg"/>
+        app:backgroundTint="@color/registration_element_fg"
+        tools:ignore="VectorDrawableCompat"/>
 </RelativeLayout>

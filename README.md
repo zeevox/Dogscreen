@@ -85,7 +85,7 @@ This will use the default values and display the default Google dogfooding notic
 
 # Custom Dogscreen
 
-As this is only the first release, customizability options are rather limited. You can, however, change the title, description and type of confirmation button.
+This project is just starting out, but new customizability features will be added soon!
 
 ### Setting a title
 

@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.annotation.StringRes;
 
+@SuppressWarnings({"SameParameterValue", "CanBeFinal", "unused"})
 public class Dogscreen {
 
     public static final int DOGSCREEN_DEFAULT = 1;
@@ -50,14 +51,14 @@ public class Dogscreen {
         return userContext.getResources().getString(contentID);
     }
 
-    public int setType(int dogscreenType) {
+    public Dogscreen setType(int dogscreenType) {
         displayType = dogscreenType;
-        return dogscreenType;
+        return this;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public boolean setFullscreen(boolean fullscreen) {
+    public Dogscreen setFullscreen(boolean fullscreen) {
         displayFullscreen = fullscreen;
-        return fullscreen;
+        return this;
     }
 }
