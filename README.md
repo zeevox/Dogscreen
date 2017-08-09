@@ -15,6 +15,7 @@
 7. [Confirmation button](#confirmation-button)
 	1. [Default confirmation bar](#default-confirmation-bar)
 	2. [FAB confirmation](#fab-confirmation)
+8. [Fullscreen](#fullscreen)
 
 
 ------
