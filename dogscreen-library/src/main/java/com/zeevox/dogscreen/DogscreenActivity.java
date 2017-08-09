@@ -21,7 +21,7 @@ public class DogscreenActivity extends AppCompatActivity {
         // Default to false if no value is passed
         // This must be called before setContentView()
         if (getIntent().getBooleanExtra("fullscreen", false)) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 setFullscreen();
             } else {
                 Log.e("Dogscreen", "Cannot setFullscreen() on application with minSdk below 16.");
@@ -72,18 +72,18 @@ public class DogscreenActivity extends AppCompatActivity {
     public void setConfirmationListener(int layoutType) {
         // Close the activity when accepted
         switch (layoutType) {
-            case Dogscreen.DOGSCREEN_DEFAULT:
-                Button dogscreenConfirmationButton = findViewById(R.id.dogscreen_confirmation_button);
-                dogscreenConfirmationButton.setOnClickListener(new View.OnClickListener() {
+            case Dogscreen.DOGSCREEN_FAB:
+                FloatingActionButton dogscreenConfirmationFAB = findViewById(R.id.dogscreen_confirmation_fab);
+                dogscreenConfirmationFAB.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         finish();
                     }
                 });
                 break;
-            case Dogscreen.DOGSCREEN_FAB:
-                FloatingActionButton dogscreenConfirmationFAB = findViewById(R.id.dogscreen_confirmation_fab);
-                dogscreenConfirmationFAB.setOnClickListener(new View.OnClickListener() {
+            default:
+                Button dogscreenConfirmationButton = findViewById(R.id.dogscreen_confirmation_button);
+                dogscreenConfirmationButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         finish();
@@ -94,7 +94,7 @@ public class DogscreenActivity extends AppCompatActivity {
     }
 
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void setFullscreen() {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         View mDecorView = getWindow().getDecorView();
@@ -103,6 +103,7 @@ public class DogscreenActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN );
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
     }
 }

@@ -55,7 +55,7 @@ public class Dogscreen {
         return dogscreenType;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public boolean setFullscreen(boolean fullscreen) {
         displayFullscreen = fullscreen;
         return fullscreen;
