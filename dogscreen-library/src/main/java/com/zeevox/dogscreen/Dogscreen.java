@@ -24,6 +24,7 @@ public class Dogscreen {
 
     public void show() {
         Intent intent = new Intent(userContext, DogscreenActivity.class)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 .putExtra("title", displayTitle)
                 .putExtra("content", displayContent)
                 .putExtra("type", displayType)
