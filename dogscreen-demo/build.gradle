@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion rootProject.ext.compileSDK
+    buildToolsVersion rootProject.ext.buildTools
     defaultConfig {
         applicationId "com.zeevox.dogscreen.demo"
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 6
-        versionName "2.1.0"
+        minSdkVersion rootProject.ext.minSDK
+        targetSdkVersion rootProject.ext.targetSDK
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
     }
     buildTypes {
         release {
@@ -22,6 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':dogscreen-library')
-    compile 'com.android.support:appcompat-v7:26.0.1'
-    compile 'com.android.support:cardview-v7:26.0.1'
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibsVersion}"
+    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibsVersion}"
 }

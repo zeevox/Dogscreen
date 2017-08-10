@@ -1,19 +1,20 @@
 apply plugin: 'com.android.library'
+
 ext {
     PUBLISH_GROUP_ID = 'com.zeevox'
     PUBLISH_ARTIFACT_ID = 'dogscreen'
-    PUBLISH_VERSION = "2.1.0"
+    PUBLISH_VERSION = rootProject.ext.versionName
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion rootProject.ext.compileSDK
+    buildToolsVersion rootProject.ext.buildTools
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 6
-        versionName "2.1.0"
+        minSdkVersion rootProject.ext.minSDK
+        targetSdkVersion rootProject.ext.targetSDK
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -33,8 +34,11 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:26.0.1"
-    compile "com.android.support:design:26.0.1"
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibsVersion}"
+    compile "com.android.support:design:${rootProject.ext.supportLibsVersion}"
 }
 
+// Compiling dogscreen-library to upload to jCenter
+// To build, run the following command
+// gradlew clean build generateRelease
 apply from: 'https://raw.githubusercontent.com/ZeevoX/Dogscreen/master/android-lib-release.gradle'
