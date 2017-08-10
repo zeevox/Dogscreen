@@ -1,4 +1,9 @@
 apply plugin: 'com.android.library'
+ext {
+    PUBLISH_GROUP_ID = 'com.zeevox'
+    PUBLISH_ARTIFACT_ID = 'dogscreen'
+    PUBLISH_VERSION = "2.1.0"
+}
 
 android {
     compileSdkVersion 26
@@ -11,12 +16,18 @@ android {
         versionName "2.1.0"
         vectorDrawables.useSupportLibrary = true
     }
+
     buildTypes {
         release {
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
     }
 }
 
@@ -25,3 +36,5 @@ dependencies {
     compile "com.android.support:appcompat-v7:26.0.1"
     compile "com.android.support:design:26.0.1"
 }
+
+apply from: 'https://raw.githubusercontent.com/ZeevoX/Dogscreen/master/android-lib-release.gradle'

@@ -49,7 +49,7 @@ Add the Dogscreen dependency in your build.gradle like so:
 ```gradle
 dependencies {
 	// ... other dependencies here
-    compile 'com.zeevox.dogscreen:dogscreen:2.0.0'
+    compile 'com.zeevox:dogscreen:2.1.0'
 }
 ```
 
