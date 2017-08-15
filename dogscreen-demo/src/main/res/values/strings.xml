@@ -7,4 +7,5 @@
   <string name="example_fullscreen_text">FULLSCREEN</string>
   <string name="example_fullscreen_text_disabled">FULLSCREEN (Requires API 19 or above)</string>
   <string name="dogscreen_application_icon">Dogscreen application icon</string>
+  <string name="example_custom_text">CUSTOM TEXT</string>
 </resources>

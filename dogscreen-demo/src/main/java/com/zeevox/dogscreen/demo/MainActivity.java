@@ -4,11 +4,13 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 import com.zeevox.dogscreen.Dogscreen;
 
 public class MainActivity extends AppCompatActivity {
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -20,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
       getSupportActionBar().setTitle(R.string.main_activity_title);
     } catch (NullPointerException npe) {
       Toast.makeText(
-              this,
-              "An error occurred. Please report this to the developer: Error code MA19",
-              Toast.LENGTH_LONG)
+          this,
+          "An error occurred. Please report this to the developer: Error code MA19",
+          Toast.LENGTH_LONG)
           .show();
       npe.printStackTrace();
     }
@@ -39,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
             new Dogscreen(getApplicationContext()).show();
           }
         });
+
+    // Define the button "CUSTOM TEXT" on the main screen, which will launch the Dogscreen with custom text instead
+    Button actionButtonCustomText = findViewById(R.id.example_custom_text_button);
+
+    // Add the onClickListener to launch the Dogscreen
+    actionButtonCustomText.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Dogscreen dogscreen = new Dogscreen(getApplicationContext());
+        dogscreen.setTitle("Hello world!");
+        dogscreen.setContent("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec dapibus turpis. Proin aliquet laoreet convallis. Phasellus at leo porttitor, blandit mauris at, interdum turpis.");
+        dogscreen.show();
+      }
+    });
 
     // Define the button "FAB" on the main screen, which will launch the Dogscreen with a FAB
     // instead
