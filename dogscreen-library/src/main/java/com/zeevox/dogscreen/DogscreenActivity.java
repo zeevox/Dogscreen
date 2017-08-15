@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class DogscreenActivity extends AppCompatActivity {
+class DogscreenActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +30,15 @@ public class DogscreenActivity extends AppCompatActivity {
     // If no parameter was passed, set the default dogscreen value type
     int type = getIntent().getIntExtra("type", Dogscreen.DOGSCREEN_DEFAULT);
     switch (type) {
-        // If the user passed a parameter through Dogscreen.setType(), display the appropriate
-        // dogscreen.
+      // If the user passed a parameter through Dogscreen.setType(), display the appropriate
+      // dogscreen.
       case Dogscreen.DOGSCREEN_DEFAULT:
         setContentView(R.layout.activity_dogscreen_default);
         break;
       case Dogscreen.DOGSCREEN_FAB:
         setContentView(R.layout.activity_dogscreen_fab);
         break;
-        // If an unknown parameter was passed, display the default dogscreen.
+      // If an unknown parameter was passed, display the default dogscreen.
       default:
         setContentView(R.layout.activity_dogscreen_default);
         break;
@@ -56,9 +56,9 @@ public class DogscreenActivity extends AppCompatActivity {
       } catch (NullPointerException npe) {
         npe.printStackTrace();
         Toast.makeText(
-                this,
-                "An error occurred. Please report this to the developer: Error code DA40",
-                Toast.LENGTH_LONG)
+            this,
+            "An error occurred. Please report this to the developer: Error code DA40",
+            Toast.LENGTH_LONG)
             .show();
       }
     }
@@ -70,9 +70,9 @@ public class DogscreenActivity extends AppCompatActivity {
       } catch (NullPointerException npe) {
         npe.printStackTrace();
         Toast.makeText(
-                this,
-                "An error occurred. Please report this to the developer: Error code DA50",
-                Toast.LENGTH_SHORT)
+            this,
+            "An error occurred. Please report this to the developer: Error code DA50",
+            Toast.LENGTH_SHORT)
             .show();
       }
     }
