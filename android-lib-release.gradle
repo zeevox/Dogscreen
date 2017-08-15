@@ -2,13 +2,14 @@
 apply plugin: 'maven'
 
 group = project.PUBLISH_GROUP_ID
+//noinspection GroovyUnusedAssignment
 archivesBaseName = project.PUBLISH_ARTIFACT_ID
 version = project.PUBLISH_VERSION
 
 def localReleaseDest = "${buildDir}/release/${version}"
 
-println("Version: " + version);
-println("Build dir: " + buildDir);
+println("Version: " + version)
+println("Build dir: " + buildDir)
 
 task androidJavadocs(type: Javadoc) {
     failOnError = false
