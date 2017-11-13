@@ -2,27 +2,27 @@
 ext {
     versionCode = 7
     versionName = "2.1.2"
-    compileSDK = 26
-    buildTools = "26.0.1"
+    compileSDK = 27
+    buildTools = "27.0.1"
     minSDK = 14
-    targetSDK = 26
-    supportLibsVersion = "26.0.1"
+    targetSDK = 27
+    supportLibsVersion = "27.0.1"
 }
 
 buildscript {
     repositories {
         jcenter()
-        maven { url "https://maven.google.com" }
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta2'
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven { url "https://maven.google.com" }
+        google()
     }
 }
 

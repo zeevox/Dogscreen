@@ -33,9 +33,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibsVersion}"
-    compile "com.android.support:design:${rootProject.ext.supportLibsVersion}"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibsVersion}"
+    implementation "com.android.support:design:${rootProject.ext.supportLibsVersion}"
 }
 
 // Compiling dogscreen-library to upload to jCenter
