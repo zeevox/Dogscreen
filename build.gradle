@@ -3,10 +3,10 @@ ext {
     versionCode = 7
     versionName = "2.1.2"
     compileSDK = 27
-    buildTools = "27.0.1"
+    buildTools = "27.0.2"
     minSDK = 14
     targetSDK = 27
-    supportLibsVersion = "27.0.1"
+    supportLibsVersion = "27.0.2"
 }
 
 buildscript {
@@ -15,7 +15,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
     }
 }
 
