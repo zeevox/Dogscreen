@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 ext {
-    versionCode = 7
+    versionCode = 8
     versionName = "2.1.2"
     compileSDK = 27
     buildTools = "27.0.2"
