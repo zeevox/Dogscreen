@@ -3,7 +3,7 @@ ext {
     versionCode = 8
     versionName = "2.1.2"
     compileSDK = 27
-    buildTools = "27.0.2"
+    buildTools = "27.0.3"
     minSDK = 14
     targetSDK = 27
     supportLibsVersion = "27.0.2"
