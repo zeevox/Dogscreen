@@ -20,7 +20,7 @@
       android:layout_gravity="center"
       android:contentDescription="@string/playful_dog_illustration"
       android:scaleType="fitCenter"
-      android:src="@drawable/playful_dog" />
+      app:srcCompat="@drawable/playful_dog" />
     <TextView
       android:id="@+id/dogscreen_title"
       android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
       android:textColor="@android:color/white"
       android:textSize="16.0sp" />
   </LinearLayout>
-  <android.support.design.widget.FloatingActionButton
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/dogscreen_confirmation_fab"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
