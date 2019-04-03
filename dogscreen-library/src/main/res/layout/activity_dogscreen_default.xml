@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -19,7 +20,7 @@
             android:layout_gravity="center"
             android:contentDescription="@string/playful_dog_illustration"
             android:scaleType="fitCenter"
-            android:src="@drawable/playful_dog" />
+            app:srcCompat="@drawable/playful_dog" />
 
         <TextView
             android:id="@+id/dogscreen_title"
