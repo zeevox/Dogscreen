@@ -22,6 +22,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':dogscreen-library')
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibsVersion}"
-    implementation "com.android.support:cardview-v7:${rootProject.ext.supportLibsVersion}"
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.supportLibsVersion}"
+    implementation "androidx.cardview:cardview:${rootProject.ext.supportLibsVersion}"
 }

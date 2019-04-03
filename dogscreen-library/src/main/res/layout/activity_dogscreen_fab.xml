@@ -42,7 +42,7 @@
             android:textSize="16.0sp" />
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/dogscreen_confirmation_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

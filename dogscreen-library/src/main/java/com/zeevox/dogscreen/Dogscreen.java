@@ -3,9 +3,9 @@ package com.zeevox.dogscreen;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.StringRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.StringRes;
 
 @SuppressWarnings({"SameParameterValue", "CanBeFinal", "unused"})
 public class Dogscreen {
