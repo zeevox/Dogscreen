@@ -1,13 +1,13 @@
 <resources>
-  <string name="app_name">Dogscreen</string>
+    <string name="app_name">Dogscreen</string>
 
-  <!--    Original string from the leaked Google Duo APK:
-          This app can only be shared with Googlers and approved testers.
-          It is not possible to register, invite, or make calls to others.    -->
+    <!--    Original string from the leaked Google Duo APK:
+            This app can only be shared with Googlers and approved testers.
+            It is not possible to register, invite, or make calls to others.    -->
 
-  <string name="dogscreen_warning">Shh&#8230; confidential</string>
-  <string name="dogscreen_desc">This app can only be shared with approved testers and developers.  It is not possible to register, invite, or make calls to others.</string>
-  <string name="dogscreen_confirm">GOT IT</string>
-  <string name="playful_dog_illustration">Playful dog illustration</string>
-  <string name="dogscreen_application_icon">Dogscreen application icon</string>
+    <string name="dogscreen_warning">Shh&#8230; confidential</string>
+    <string name="dogscreen_desc">This app can only be shared with approved testers and developers.  It is not possible to register, invite, or make calls to others.</string>
+    <string name="dogscreen_confirm">GOT IT</string>
+    <string name="playful_dog_illustration">Playful dog illustration</string>
+    <string name="dogscreen_application_icon">Dogscreen application icon</string>
 </resources>

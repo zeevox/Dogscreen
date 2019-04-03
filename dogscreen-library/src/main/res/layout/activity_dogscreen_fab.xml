@@ -1,58 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/dogscreen_root"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:background="@color/dogscreen_background"
-  tools:ignore="Overdraw">
-  <LinearLayout
-    android:id="@+id/linearLayout"
-    android:layout_width="252.0dip"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:gravity="center_vertical"
-    android:orientation="vertical">
-    <ImageView
-      android:layout_width="200.0dip"
-      android:layout_height="200.0dip"
-      android:layout_gravity="center"
-      android:contentDescription="@string/playful_dog_illustration"
-      android:scaleType="fitCenter"
-      android:src="@drawable/playful_dog" />
-    <TextView
-      android:id="@+id/dogscreen_title"
-      android:layout_width="wrap_content"
-      android:layout_height="fill_parent"
-      android:layout_marginTop="16.0dip"
-      android:text="@string/dogscreen_warning"
-      android:textColor="@color/registration_element_fg"
-      android:textSize="24.0sp" />
-    <TextView
-      android:id="@+id/dogscreen_content"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20.0dip"
-      android:layout_marginBottom="56.0dip"
-      android:text="@string/dogscreen_desc"
-      android:textColor="@android:color/white"
-      android:textSize="16.0sp" />
-  </LinearLayout>
-  <android.support.design.widget.FloatingActionButton
-    android:id="@+id/dogscreen_confirmation_fab"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/activity_vertical_padding"
-    android:layout_marginEnd="@dimen/activity_padding"
-    android:layout_marginRight="@dimen/activity_padding"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentRight="true"
-    android:clickable="true"
-    android:focusable="true"
-    app:backgroundTint="@color/registration_element_fg"
-    app:fabSize="normal"
-    app:srcCompat="@drawable/check"
-    tools:ignore="VectorDrawableCompat" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dogscreen_background"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="252.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200.0dip"
+            android:layout_height="200.0dip"
+            android:layout_gravity="center"
+            android:contentDescription="@string/playful_dog_illustration"
+            android:scaleType="fitCenter"
+            android:src="@drawable/playful_dog" />
+
+        <TextView
+            android:id="@+id/dogscreen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="16.0dip"
+            android:text="@string/dogscreen_warning"
+            android:textColor="@color/registration_element_fg"
+            android:textSize="24.0sp" />
+
+        <TextView
+            android:id="@+id/dogscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="56.0dip"
+            android:text="@string/dogscreen_desc"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dogscreen_confirmation_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/activity_padding"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:layout_marginBottom="@dimen/activity_vertical_padding"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/registration_element_fg"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/check"
+        tools:ignore="VectorDrawableCompat" />
 </RelativeLayout>
